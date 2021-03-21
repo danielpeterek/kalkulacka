@@ -1,0 +1,17 @@
+.vysledek {
+    font-size: x-large;
+}
+
+h1 {
+    font-size: 50px;
+}
+
+header {
+    background-color: lightskyblue;
+    margin: 75px;
+}
+
+footer {
+    background-color: lightskyblue;
+    margin: 75px;
+}

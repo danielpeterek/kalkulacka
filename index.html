@@ -1,0 +1,80 @@
+
+<!DOCTYPE html>
+<html lang="cs">
+    <head>
+        <meta charset="utf-8">
+        <meta http-equiv="X-UA-Compatible" content="IE=edge">
+        <meta name="viewport" content="width=device-width, initial-scale=1">
+        <title>Spotřeba elektřiny</title>
+
+        <!-- Bootstrap CSS -->
+        <link href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css" rel="stylesheet">
+        <link rel="stylesheet" href="css/style.css">
+
+    </head>
+    <header>
+        <h1 class="text-center">Kalkulačka spotřeby elektřiny</h1>
+    </header>
+    <body>
+        <main class="container">
+            <form>
+                <div class="form-group row">
+                    <label for="prikon" class="col-sm-3 col-form-label">Zadejte příkon elektrické energie</label>
+                    <div class="col-sm-3">
+                        <input type="number" class="form-control" name="prikon" id="prikon" value="100">
+                    </div>
+                    <div class="col-sm-1">
+                        <select class="form-control" name="watt" id="watt">
+                            <option value="W">W</option>
+                            <!--<option value="KW">kW</option>-->
+                        </select>
+                    </div>
+                </div>
+
+                <div class="form-group row">
+                    <label for="cas" class="col-sm-3 col-form-label">Zadejte dobu provozu</label>
+                    <div class="col-sm-3">
+                        <input type="number" class="form-control" name="cas" id="cas" value="2">
+                    </div>
+                    <div class="col-sm-3">
+                        <select class="form-control" name="dataunit" id="dataunit">
+                            <option value="hodindenne">hodin/denně</option>
+                            <!--<option value="dnurocne">dnů/ročně</option>-->
+                        </select>
+                    </div>
+                </div>
+
+                <div class="form-group row">
+                    <label for="cena" class="col-sm-3 col-form-label">Zadejte cenu, za kterou odebíráte 1 kWh elektrické energie.</label>
+                    <div class="col-sm-3">
+                        <input type="number" class="form-control" name="cena" id="cena" value="4.10">
+                    </div>
+                    <div class="col-sm-1">
+                        Kč
+                    </div>
+                </div>
+
+                <div class="form-group row">
+                    <div class="text-center">
+                        <button type="button" id="calc" class="btn btn-primary">Vypočítat</button>
+                    </div>
+                </div>
+
+                <hr>
+                <div id="vysledek" class="display-4 text-center vysledek">Zde bude výsledek</div>
+                <hr>
+                
+            </form>
+            
+        </main>
+        <footer>
+            <div class="text-center">Daniel Peterek - SŠPU Opava - 2021</div>
+        </footer>
+        <!-- jQuery -->
+        <script src="https://ajax.googleapis.com/ajax/libs/jquery/1.12.4/jquery.min.js"></script>
+        <script src="https://code.jquery.com/jquery-3.3.1.min.js"></script>
+        <!-- Bootstrap JavaScript -->
+        <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/js/bootstrap.min.js"></script>
+        <script src="js/main.js"></script>
+    </body>
+</html>
